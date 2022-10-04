@@ -17,6 +17,8 @@ blockquote,
 dl,
 dd {
   margin: 0;
+  font-weight: 400;
+  font-size: 1rem;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -76,6 +78,7 @@ select {
 body{
     font-family: 'Dosis', sans-serif;
     display: flex;
+  background-color: #F9FAFB;
 }
 
 .logo-txt,
@@ -84,7 +87,7 @@ body{
     color: #fff;
 }
 
-
+/* ////////////////////////////////Logo styling/////////////////////////////////////// */
 
 .logo.container{
     background-image: url(./logo-bg-pic.jpg);
@@ -94,7 +97,7 @@ body{
     background-size: cover;
     height: 100vh;
     width: 40%;
-    min-width: 200px;
+    min-width: 425px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -112,13 +115,88 @@ body{
 }
 
 .logo-txt{
-    font-size: 2.1rem;
+    font-size: 5rem;
 
 }
 
 .pic-credit{
     justify-self: flex-end;
     position: fixed;
-    font-size: 0.7rem;
+    font-size: 1.5rem;
     bottom: 0;
+}
+
+/* ////////////////////////////////Content styling/////////////////////////////////////// */
+
+/* ///////////Intro txt style/////////// */
+
+.intro-txt.container{
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+  padding-top: 4rem;
+  width: 100%;
+}
+
+.intro-txt{
+  font-size: 1.3rem;
+  line-height: 1.3;
+  width: 68%;
+}
+
+/* ///////////Form style/////////// */
+
+.form.container{
+  
+}
+
+.form-header{
+  font-size: 1.3rem;
+}
+
+.required-txt{
+  margin-bottom: 1rem;
+}
+
+fieldset{
+  border: none;
+  background-color: #fff;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+
+  box-shadow: 0px 6px 5px 1px rgba(33,33,33,0.19);
+}
+
+.form-boxes{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  width: 40%;
+}
+
+label{
+  display: block;
+  font-size: 0.8rem;
+}
+
+input{
+  border: 1px solid #909090;
+  border-radius: 2px;
+}
+
+input:focus{
+  outline: 1.3px #2790f8 solid;
+  box-shadow: 3px 4px 9px -1px rgba(0,0,0,0.16)
+}
+
+/* input:required:invalid {
+  outline: 1.3px #f82727 solid;
+} */
+
+/* ///////////Submit style/////////// */
+
+.submit.container{
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
 }

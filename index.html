@@ -20,19 +20,47 @@
     </div>
     <div class="content container">
         <div class="intro-txt container">
-            <p class="intro-txt">Naturally - is not a real website,it was created as part of The Odin project’s Full-Stack course, this assignment focuses on the front end form submission and validation.</p>
-            <p class="intro-txt">So don’t sign up Now!</p>
-            <p class="intro-txt">Even tough you want to...</p>
+            <p class="intro-txt">Naturally - is not a real website, it was created as part of The Odin project’s Full-Stack course, this assignment focuses on the front end form submission and validation.</p>
+            <p class="intro-txt">So don’t sign up now!</p>
+            <br><p class="intro-txt">You know you want to...</p>
         </div>
-        <div class="form container">
-            <form action="">
-
-            </form>
-        </div>
-        <div class="submit container">
-            <button>Create account</button>
-            <p class="submit-txt">Already have an account? <a class="login-link" href="">Log in</a></p>
-        </div>
+        <form action="" method="post">
+            <fieldset>
+                <h1 class="form-header">Let’s sign-up!</h1>
+                <h2 class="required-txt">Fields marked with an asterisk (*) are required.</h2>
+                <div class="form-boxes">
+                    <div class="first-name box">
+                        <label for="first-name">FIRST NAME<span>*</span></label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </div>
+                    <div class="last-name box">
+                        <label for="last-name">LAST NAME<span>*</span></label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
+                    <div class="email box">
+                        <label for="email">EMAIL<span>*</span></label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                
+                    <div class="phone box">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="password box">
+                        <label for="password">PASSWORD<span>*</span></label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="confirm-password box">
+                        <label for="confirm-password">CONFIRM PASSWORD<span>*</span></label>
+                        <input type="password" id="confirm-password" name="confirm-password" required>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="submit container">
+                <button type="submit">Create account</button>
+                <p class="submit-txt">Already have an account? <a class="login-link" href="">Log in</a></p>
+            </div>
+        </form>
     </div>
 </body>
 </html>
