@@ -24,7 +24,7 @@
             <p class="intro-txt">So don’t sign up now!</p>
             <br><p class="intro-txt">You know you want to...</p>
         </div>
-        <form action="" method="post">
+        <form action="" method="" id="form">
             <fieldset>
                 <h1 class="form-header">Let’s sign-up!</h1>
                 <h2 class="required-txt">Fields marked with an asterisk (*) are required.</h2>
@@ -49,6 +49,7 @@
                     <div class="password box">
                         <label for="password">PASSWORD<span>*</span></label>
                         <input type="password" id="password" name="password" required>
+                        <div class="error"></div>
                     </div>
                     <div class="confirm-password box">
                         <label for="confirm-password">CONFIRM PASSWORD<span>*</span></label>
@@ -57,10 +58,11 @@
                 </div>
             </fieldset>
             <div class="submit container">
-                <button type="submit">Create account</button>
+                <button type="submit" id="submit-btn">Create Account</button>
                 <p class="submit-txt">Already have an account? <a class="login-link" href="">Log in</a></p>
             </div>
         </form>
     </div>
+    <script src="./app.js"></script>
 </body>
 </html>

@@ -1,12 +1,16 @@
-// const password = document.getElementById("password");
-// const confirmPassword = document.getElementById("confirm-password");
+const password = document.getElementById("password");
+const confirmPassword = document.getElementById("confirm-password");
+const error = document.querySelector(".error");
+const form = document.getElementById("form");
 
 
-// confirmPassword.addEventListener("input", (event) => {
-//   if (password!=confirmPassword) {
-//     password.setCustomValidity("The passwords don't match");
-//     password.reportValidity();
-//   } else {
-//     password.setCustomValidity("");
-//   }
-// });
+
+form.addEventListener("submit", (e) => {
+    if (password.value != confirmPassword.value) {
+        error.textContent="*The passwords do not match"
+        password.style.borderColor = "red";
+        confirmPassword.style.borderColor = "red";
+        e.preventDefault()
+    }
+
+});
